@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hoàng Phi Hải — Senior Backend &amp; Platform Engineer</title>
+<meta name="description" content="Senior Backend &amp; Platform Engineer, 9 năm C#/.NET — ERP, distributed systems, auth &amp; identity.">
+<link rel="stylesheet" href="style.css">
+</head><body>
+
+<h1>Hoàng Phi Hải</h1>
+<div class="role">Senior Backend &amp; Platform Engineer — .NET / Distributed Systems</div>
+<div class="contact">
+  <a href="mailto:hoangphihai93@gmail.com">hoangphihai93@gmail.com</a>
+  &nbsp;·&nbsp; Hoà Bình / Hà Nội, Việt Nam
+  &nbsp;·&nbsp; <a href="https://github.com/hairangsua">github.com/hairangsua</a>
+</div>
+
+<h2>Profile</h2>
+<p class="profile">
+9 năm thiết kế và phát triển hệ thống trên <b>C# / .NET</b>: ERP doanh nghiệp, nền tảng xử lý dữ liệu lớn
+và distributed systems. Đã đi trọn vòng nhiều sản phẩm — từ phân tích nghiệp vụ, thiết kế kiến trúc, tới
+triển khai và vận hành production — ở cả web, desktop (WinForms) và data pipeline.
+Chuyên sâu <b>ASP.NET Core, PostgreSQL, Redis, RabbitMQ, event-driven architecture, caching strategy</b> và
+tối ưu hiệu năng cho hệ thống yêu cầu cao về khả năng mở rộng và độ ổn định.
+Tốt nghiệp <b>Khoa An toàn Thông tin — Học viện Kỹ thuật Mật mã</b>, làm được các bài toán authentication,
+identity và phân quyền ở mức nền tảng chứ không chỉ mức tích hợp.
+Có <b>4 năm làm Team Leader</b> (team 3–20 người), quen với việc đặt chuẩn kỹ thuật và review code cho cả nhóm.
+</p>
+
+<h2>Highlights</h2>
+<div class="callout"><ul>
+  <li><b>Platform &amp; shared libraries:</b> xây các module dùng chung toàn hệ thống — approval/workflow state-machine engine, number sequence generator, và lớp xử lý tiền tệ tập trung bảo đảm tổng phân bổ luôn khớp tổng gốc.</li>
+  <li><b>Auth &amp; identity ở mức nền tảng:</b> thiết kế custom OIDC grant trên OpenIddict, module impersonation, phân quyền RBAC theo cây tổ chức.</li>
+  <li><b>Dữ liệu lớn &amp; realtime:</b> data pipeline crawl Twitter / CoinGecko / CoinMarketCap với batch processing + RabbitMQ, rate limiting &amp; retry, WebSocket streaming cho dữ liệu thời gian thực.</li>
+  <li><b>Ownership trọn mảng nghiệp vụ:</b> tự build trọn hệ thống HRM (tính công tự động, tính lương, quy trình duyệt nhiều cấp) và nhiều module ERP từ con số 0.</li>
+</ul></div>
+
+<h2>Core Skills</h2>
+<dl class="skills">
+  <dt>Backend &amp; .NET</dt><dd>C#, .NET / .NET Core, ASP.NET Core, Web API, SignalR, ABP Framework, xUnit</dd>
+  <dt>Architecture</dt><dd>DDD &amp; module boundary, event-driven architecture, CQRS-style separation, state machine, layered dependency, high-load system design</dd>
+  <dt>Data</dt><dd>PostgreSQL, SQL Server, MySQL, MongoDB, Redis, EF Core &amp; migrations, query optimization, multi-database per use case</dd>
+  <dt>Messaging &amp; Realtime</dt><dd>RabbitMQ, WebSocket streaming, background workers (Hangfire), batch &amp; async processing, distributed caching</dd>
+  <dt>Security &amp; Identity</dt><dd>OAuth2 / OIDC, OpenIddict, custom grant type, permission &amp; role, RBAC theo organization unit, impersonation</dd>
+  <dt>Desktop &amp; Frontend</dt><dd>WinForms (~5 năm trên codebase production), Angular, TypeScript</dd>
+  <dt>Infra &amp; Tooling</dt><dd>Git, GitHub Actions, Docker / Docker Compose, Linux, IIS, Nginx, Cloudflare</dd>
+  <dt>Leadership</dt><dd>Team Leader 3–20 người, engineering standards, code review, phân tích nghiệp vụ &amp; đề xuất giải pháp</dd>
+  <dt>AI-assisted dev</dt><dd>Claude Code, Cursor, GitHub Copilot — dùng trong quy trình hằng ngày kèm chuẩn review riêng</dd>
+</dl>
+
+<h2>Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title"><span class="todo">Tên công ty</span></span>
+    <span class="job-meta"><span class="todo">MM/YYYY</span> – nay</span>
+  </div>
+  <div class="job-sub"><span class="todo">Job title</span> · ERP platform · team 7 developer</div>
+  <div class="job-ctx">Nền tảng ERP cho nghiệp vụ mua hộ &amp; chuyển phát quốc tế, kiến trúc 20 module nghiệp vụ.</div>
+  <ul>
+    <li>Thiết kế kiến trúc module theo DDD với biên rõ ràng (Domain → Application → HttpApi) cho 20 module nghiệp vụ: đơn hàng, mua hàng, kho &amp; khai thác, công nợ, ví khách hàng, tỷ giá, duyệt.</li>
+    <li>Xây các <b>shared platform module</b> dùng chung: approval/workflow state-machine engine, number sequence generator, và lớp xử lý tiền tệ tập trung — một điểm làm tròn duy nhất, bảo đảm tổng các dòng phân bổ luôn khớp đúng tổng gốc.</li>
+    <li>Thiết kế <b>ledger hai trục số dư</b> cho ví khách hàng và công nợ, kèm projection đồng bộ phục vụ lịch sử giao dịch hiển thị cho người dùng.</li>
+    <li>Triển khai <b>custom OIDC grant</b> trên OpenIddict: xác thực từ identity provider ngoài, map về <code>IdentityUser</code>, phát token — kèm xử lý race condition khi hai request đồng thời tạo cùng một user.</li>
+    <li>Xây <b>module impersonation</b> và luồng debug permission phục vụ vận hành &amp; hỗ trợ khách hàng; phân quyền chạy qua permission/role gắn theo cây tổ chức (OU) thay vì hard-code.</li>
+    <li>Chủ trì <b>engineering standards</b>: bộ tài liệu rule theo từng layer (domain, application, persistence, money, testing, git workflow) dùng làm chuẩn code review cho cả team.</li>
+    <li>Tham gia <b>CI/CD</b>: GitHub Actions deploy staging, Docker Compose cho môi trường production và devcontainer.</li>
+  </ul>
+  <div class="stack"><b>Stack:</b> ASP.NET Core, ABP Framework, OpenIddict, PostgreSQL, EF Core, Redis, RabbitMQ, Angular, Docker, GitHub Actions</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">TKMedia</span>
+    <span class="job-meta">02/2022 – 08/2024</span>
+  </div>
+  <div class="job-sub">Fullstack Developer / Team Leader · 3 sản phẩm, team 3–6</div>
+  <div class="job-ctx">ChainPlay.gg, AlphaQuest.io, Lead3.io — nền tảng blockchain analytics &amp; game platform.</div>
+  <ul>
+    <li>Thiết kế và xây backend ASP.NET Core (ABP Framework) cho 3 nền tảng, xử lý khối lượng dữ liệu lớn từ nhiều nguồn ngoài.</li>
+    <li>Xây <b>data pipeline</b> thu thập &amp; phân tích dữ liệu từ Twitter, CoinGecko, CoinMarketCap: batch processing kết hợp RabbitMQ, cơ chế <b>rate limiting &amp; retry</b> để hệ thống không sập khi nhà cung cấp giới hạn.</li>
+    <li>Chủ động nghiên cứu phương án truy xuất dữ liệu thay thế, giảm phụ thuộc vào gói API trả phí và <b>cắt chi phí API</b>.</li>
+    <li>Xử lý dữ liệu realtime bằng <b>WebSocket streaming</b> và event-driven processing; background job định kỳ với Hangfire; Redis caching giảm tải database.</li>
+    <li>Multi-database theo từng bài toán (MySQL, PostgreSQL, MongoDB), thiết kế mô hình dữ liệu riêng cho từng use case.</li>
+    <li>Tích hợp cổng thanh toán; đồng bộ dữ liệu với Airtable qua API; xây CMS Angular phục vụ vận hành nội dung.</li>
+  </ul>
+  <div class="stack"><b>Stack:</b> ASP.NET Core, ABP, RabbitMQ, Redis, Hangfire, MySQL, PostgreSQL, MongoDB, WebSocket, Angular</div>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">Công ty CPN Quốc tế Hợp Nhất</span>
+    <span class="job-meta">2017 – 04/2021</span>
+  </div>
+  <div class="job-sub">Fullstack Developer → Team Leader · team 5–20</div>
+  <div class="job-ctx">Fastlink ERP (WinForms + ASP.NET MVC), Portal đại lý quốc tế, HNCmua.com, HopNhat.vn, ứng dụng kho cho Tiki.</div>
+  <ul>
+    <li><b>Fastlink ERP:</b> phát triển và duy trì ERP nội bộ (Windows Forms + ASP.NET MVC) phục vụ toàn bộ vận hành doanh nghiệp chuyển phát quốc tế — module Vận hành, HRM, CRM; dẫn team 20 người.</li>
+    <li>Thiết kế và build <b>trọn hệ thống HRM</b>: tool tính công tự động từ dữ liệu chấm công (nghỉ phép, đi muộn / về sớm, miễn check-in/out) và hệ thống tính lương với quy trình duyệt nhiều cấp, tracking và lưu vết đầy đủ.</li>
+    <li>Xây module <b>khiếu nại &amp; đền bù</b>, chuẩn hoá quy trình thẩm định và xử lý sự cố; mở rộng CRM quản lý khách hàng và quy trình kinh doanh.</li>
+    <li><b>Ứng dụng kho cho Tiki:</b> backend cho luồng check-in / check-out hàng hoá, chịu khối lượng giao dịch cao, đồng bộ dữ liệu giữa mobile và web.</li>
+    <li><b>Portal.FastLink.vn</b> (Serenity / ASP.NET MVC + TypeScript): quản lý đơn hàng cho đại lý ở nhiều quốc gia, tối ưu tốc độ truy cập xuyên khu vực địa lý.</li>
+    <li><b>HNCmua.com</b> (NopCommerce): báo giá tự động cho dịch vụ mua hộ, giỏ hàng tùy biến theo nghiệp vụ mua hộ &amp; vận chuyển quốc tế. <b>HopNhat.vn</b>: API tra cứu vận đơn tích hợp hệ thống nội bộ + CMS.</li>
+    <li>Triển khai và vận hành trên IIS: monitoring, bảo trì, xử lý sự cố production.</li>
+  </ul>
+  <div class="stack"><b>Stack:</b> C#, WinForms, ASP.NET MVC / Core, Serenity, NopCommerce, MySQL, SQL Server, TypeScript, IIS</div>
+</div>
+
+<div class="two">
+  <div class="job">
+    <div class="job-head"><span class="job-title">MISA</span><span class="job-meta">08/2021 – 01/2022</span></div>
+    <div class="job-sub">Fullstack Dev / Team Leader · team 10</div>
+    <div class="job-ctx">CRM Phân bón Đầu Trâu, nền tảng MISA CRM.</div>
+    <ul>
+      <li>Customize CRM theo nghiệp vụ đặc thù từng khách hàng.</li>
+      <li>Thiết kế API tích hợp <b>hệ thống tổng đài</b>, gửi / nhận tin nhắn văn bản.</li>
+      <li>Phối hợp frontend Angular 9 triển khai tính năng end-to-end.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> ASP.NET, MySQL, Angular 9</div>
+  </div>
+  <div class="job">
+    <div class="job-head"><span class="job-title">Novaon</span><span class="job-meta">04/2021 – 08/2021</span></div>
+    <div class="job-sub">Backend Developer · team 10</div>
+    <div class="job-ctx">OnCRM — hệ thống CRM trên ABP Framework.</div>
+    <ul>
+      <li>Thiết kế RESTful API phục vụ nghiệp vụ CRM.</li>
+      <li>Tối ưu hiệu năng API qua tối ưu truy vấn và Redis caching.</li>
+      <li>Monitoring và xử lý sự cố để hệ thống chạy liên tục.</li>
+    </ul>
+    <div class="stack"><b>Stack:</b> ASP.NET Core, ABP, SQL Server, Redis</div>
+  </div>
+</div>
+
+<h2>Other Projects</h2>
+<div class="two">
+  <div class="job">
+    <div class="job-head"><span class="job-title">Xing Project — Miyatsu VN</span><span class="job-meta">10/2022 – 11/2023</span></div>
+    <div class="job-sub">Desktop Developer (WinForms) · outsource, team 6</div>
+    <ul><li>Duy trì và mở rộng bộ ứng dụng desktop WinForms quản lý bài hát và xử lý âm thanh cho hệ thống karaoke; đọc hiểu và sửa codebase legacy, bổ sung tính năng theo yêu cầu vận hành.</li></ul>
+    <div class="stack"><b>Stack:</b> C#, .NET, WinForms, audio processing</div>
+  </div>
+  <div class="job">
+    <div class="job-head"><span class="job-title">ERP — VNI Insurance</span><span class="job-meta">10/2020 – 04/2021</span></div>
+    <div class="job-sub">Fullstack Dev / Team Leader · outsource, team 8</div>
+    <ul><li>Xây và customize module nghiệp vụ ERP nội bộ cho doanh nghiệp bảo hiểm; triển khai và bàn giao hệ thống.</li></ul>
+    <div class="stack"><b>Stack:</b> ASP.NET, MySQL, TypeScript</div>
+  </div>
+  <div class="job">
+    <div class="job-head"><span class="job-title">Trader &amp; Blockchain Data Tooling</span><span class="job-meta">cá nhân</span></div>
+    <div class="job-sub">Công cụ tự xây</div>
+    <ul><li>Tool theo dõi wallet, transaction và dòng tiền on-chain; xử lý dữ liệu realtime qua WebSocket + event-driven processing, tối ưu database &amp; caching cho dashboard nội bộ.</li></ul>
+  </div>
+  <div class="job">
+    <div class="job-head"><span class="job-title">CarParking</span><span class="job-meta">08/2018 – 12/2018</span></div>
+    <div class="job-sub">Fullstack Developer · outsource, team 3</div>
+    <ul><li>Ứng dụng tìm bãi đỗ xe gần nhất theo vị trí: tích hợp Google Maps API, dùng RedisGraph tối ưu truy vấn dữ liệu vị trí.</li></ul>
+    <div class="stack"><b>Stack:</b> ASP.NET, MySQL, RedisGraph, Google Maps API</div>
+  </div>
+</div>
+
+<h2>Education</h2>
+<div class="job-head">
+  <span class="job-title">Học viện Kỹ thuật Mật mã — Khoa An toàn Thông tin</span>
+  <span class="job-meta">2012 – 2017</span>
+</div>
+<div class="job-ctx">Đào tạo chuyên ngành an toàn thông tin và mật mã: cơ sở cho authentication, identity và secure communication.</div>
+
+</body></html>
